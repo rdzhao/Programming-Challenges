@@ -3,8 +3,11 @@
 void Problem::launch()
 {
 	read();
+	cout << "Reading Complete!" << endl;
 	solve();
+	cout << "Solving Complete!" << endl;
 	output();
+	cout << "Output Complete!" << endl;
 }
 
 void Problem::read()
@@ -22,5 +25,5 @@ void Problem::solve()
 void Problem::output()
 {
 	// TODO: implement details of output
- 	
+
 }

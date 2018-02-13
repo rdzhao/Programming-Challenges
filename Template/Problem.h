@@ -8,7 +8,12 @@
 #include <vector>
 #include <list>
 #include <stack>
+#include <queue>
 #include <map>
+#include <set>
+
+#include <cmath>
+#include <algorithm>
 
 using namespace std;
 
@@ -26,9 +31,9 @@ public:
 
 	// TODO: additional helper functions
 
+
 private:
 	std::string filename;
-	std::fstream file;
 	
 	// TODO: set input parameters here as private member variables.
 
