@@ -1,0 +1,1 @@
+Template for solving problems.
