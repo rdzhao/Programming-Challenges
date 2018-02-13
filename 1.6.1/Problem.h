@@ -20,11 +20,14 @@ public:
 	void output();
 
 	// TODO: additional helper functions
+	int findCycle(int var);
 
 private:
 	std::string filename;
 	std::fstream file;
 	
 	// TODO: set input parameters here as private member variables.
+	int i, j;
+	int mc;
 
 };
