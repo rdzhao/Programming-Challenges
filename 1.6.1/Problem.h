@@ -5,6 +5,8 @@
 #include <sstream>
 #include <string>
 
+#include <vector>
+
 using namespace std;
 
 class Problem
@@ -27,7 +29,7 @@ private:
 	std::fstream file;
 	
 	// TODO: set input parameters here as private member variables.
-	int i, j;
-	int mc;
+	vector<int> lower, upper;
+	vector<int> maxCycle;
 
 };

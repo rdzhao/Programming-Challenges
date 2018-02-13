@@ -12,30 +12,41 @@ void Problem::read()
 {
 	// TODO: implement details to read input
 	file.open(filename.c_str(), std::ios::in);
-	std::string str;
-	std::getline(file, str);
-
-	std::stringstream ss(str);
-	ss >> i >> j;
+	string str;
+	while (getline(file, str))
+	{
+		stringstream ss(str);
+		int i, j;
+		ss >> i >> j;
+		lower.push_back(i);
+		upper.push_back(j);
+	}
 }
 
 void Problem::solve()
 {
 	// TODO: implement details of the algorithm
-	mc = 0; // maximum cycle
-	for (int k = i; k <= j; ++k)
+	for (int i = 0; i < lower.size(); ++i)
 	{
-		int cycle = findCycle(k);
-		if (cycle > mc)
-			mc = cycle;
+		int mc = 0;
+		for (int k = lower[i]; k <= upper[i]; ++k)
+		{
+			int cycle = findCycle(k);
+			if (cycle > mc)
+				mc = cycle;
+		}
+
+		maxCycle.push_back(mc);
 	}
+	
 }
 
 void Problem::output()
 {
 	// TODO: implement details of output
 	std::ofstream out("output.txt");
-	out << i << " " << j << " " << mc << std::endl;
+	for (int i = 0; i < maxCycle.size(); ++i)
+		out << lower[i] << " " << upper[i] << " " << maxCycle[i] << endl;
  	
 }
 
