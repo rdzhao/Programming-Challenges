@@ -5,6 +5,11 @@
 #include <sstream>
 #include <string>
 
+#include <vector>
+#include <list>
+#include <stack>
+#include <map>
+
 using namespace std;
 
 class Problem
