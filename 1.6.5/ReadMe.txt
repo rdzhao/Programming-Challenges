@@ -20,7 +20,7 @@ The editor accepts the following commands:
 |I M N          |Create a new M ×N image with all pixels initially colored  |
 |               |white (O).                                                 |
 -----------------------------------------------------------------------------
-|C              |Clear the table by setting all pixels white (O). The size	|
+|C              |Clear the table by setting all pixels white (O). The size  |
 |               |remains unchanged.                                         |
 -----------------------------------------------------------------------------
 |L X Y C        |Colors the pixel (X, Y ) in color (C).                     |
